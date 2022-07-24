@@ -84,7 +84,6 @@ impl Board {
         // Actual evolution step of conways
         // Count neighbors of old, assign to new, then copy
         // new to old
-        // TODO: FIX THIS
         for w in 1..self.width - 1 {
             for h in 1..self.height - 1 {
                 let neighbors = self.count_neighbors(w, h);
